@@ -16,3 +16,9 @@ Naming scheme:
 ## Log
 
 - 2020-11-30: Git Init & First Commit
+- 2020-12-01: Day 1 Solved (MB)
+
+## Leaderboard
+
+- MB: 02 Gold Stars
+- MP: 00 Gold Stars
