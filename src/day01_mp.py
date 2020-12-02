@@ -1,19 +1,23 @@
 # read input file and store each line as element in list
 
+# TODO: open sollte man IMMER mit sog. Context Manager nutzen.
+# See --> https://www.geeksforgeeks.org/context-manager-in-python/
 file = open("input_files\day01_input_mp.txt")
 lines = file.read().split("\n")
 file.close()
 
 # print(lines)
 
+# TODO: Hier hast du völlig Recht, allerdings kannst du dir den Zwischenschritt sparen.
+# Also guck dir mal meinen Code an. Da nutze ich sog. "List Comprehension"
+# See --> https://realpython.com/list-comprehension-python/
 # convert list values to integers. might be handy later.
-
 numbers = list(map(int, lines))
 
 # Part 1
 
 def find_two_magic_summands(numbers: list, magic_sum: int):
-    for i in range(len(numbers)):
+for i in range(len(numbers)):                               # TODO: Das hier ist ein NoNo (in Python)! Du iterierst über ein Iterable, also in diesem Fall eine bereits vorhandene, bekannte Liste. Deshalb kannst du direkt über die Liste laufen a la for item in list: bzw. wenn du eine Zählvariable brauchst for i, item in enumerate(liste):
         for j in range(i+1, len(numbers)):
             if numbers[i] + numbers[j] == magic_sum:
                 summand_1 = numbers[i]
@@ -21,7 +25,7 @@ def find_two_magic_summands(numbers: list, magic_sum: int):
                 # print(numbers[i], numbers[j])
                 break
     return summand_1, summand_2
-    
+
 two_summands = find_two_magic_summands(numbers, 2020)
 
 print(two_summands[0] * two_summands[1])
@@ -59,5 +63,4 @@ print(three_summands[0] * three_summands[1] * three_summands[2])
 #                 break
 
 
-        
-        
+
