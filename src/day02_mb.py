@@ -49,6 +49,16 @@ for line in lines:
     temp = line.replace('-', ' ').replace(': ', ' ').split()
     passwords_2.append(Password_Policy_2(int(temp[0]), int(temp[1]), temp[2], temp[3]))
 
+
+def check_equality(char, position, input_string):
+    if char == input_string[position]:
+        return True
+    elif position > len(input_string):
+        return False
+    else:
+        return False
+
+
 def check_pwd_policy_compliance_2(passwords):
     "Takes a list of PasswordPolicies and checks if the passwords comply to the policy."
     valid_passwords = 0
@@ -56,21 +66,9 @@ def check_pwd_policy_compliance_2(passwords):
     count2 = 0
 
     for password in passwords:
-        print(f'{password.snd_idx < len(password.passphrase) -1 = }')
-        if password.snd_idx < len(password.passphrase) - 1:
-
-            if password.char == password.passphrase[password.fst_idx + 1]:
-                count1 +=1
-
-            if password.char == password.passphrase[password.snd_idx + 1]:
-                count2 +=1
-
-            if sum_count := count1 + count2 == 1:
-                valid_passwords += 1
-
-        count1 = 0
-        count2 = 0
-
+        # print(f'{password.snd_idx < len(password.passphrase) -1 = }')
+        if check_equality(password.char, password.fst_idx - 1 , password.passphrase) ^ check_equality(password.char, password.snd_idx - 1 , password.passphrase):
+            valid_passwords += 1
     return valid_passwords
 
 print(f'Part Two - Number of valid passwords: {check_pwd_policy_compliance_2(passwords_2)}')
