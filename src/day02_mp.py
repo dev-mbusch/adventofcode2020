@@ -19,7 +19,10 @@ def password_validator(min, max, magic_char, password):
     is_valid = (magic_char_count >= int(min) and magic_char_count <= int(max))
     return is_valid
 
-
+def second_password_validator(first_index, second_index, magic_char, password):
+    is_valid = (password[int(first_index)-1] == magic_char and password[int(second_index)-1] != magic_char) or (password[int(first_index)-1] != magic_char and password[int(second_index)-1] == magic_char)
+    return is_valid
+    
 #sample_input = "4-5 t: ttglwxxghtznp"
 # parsed_input = lineparser(sample_input)
 # #print(password_validator(1,12,"t","ttglwxxghtznp"))
@@ -33,9 +36,13 @@ if __name__ == '__main__':
 
     # define counter
     valid_password_count = 0
+    second_valid_password_count = 0
 
     for line in lines:
         if password_validator(*lineparser(line)):
             valid_password_count += 1
+        if second_password_validator(*lineparser(line)):
+            second_valid_password_count +=1
     
     print(valid_password_count)
+    print(second_valid_password_count)
