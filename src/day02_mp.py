@@ -1,5 +1,6 @@
 import re
 
+
 def lineparser (policy_and_password: str):
     """Takes in a string consisting of a policy followed by a password.
     Policies define min and max occurencies of a single character within a password, e.g. min-max x.
@@ -20,9 +21,10 @@ def password_validator(min, max, magic_char, password):
     return is_valid
 
 def second_password_validator(first_index, second_index, magic_char, password):
+    # TODO: Das hier kannst du vereinfachen, wenn du XOR benutzt. XOR ist in Python Syntax: ^
     is_valid = (password[int(first_index)-1] == magic_char and password[int(second_index)-1] != magic_char) or (password[int(first_index)-1] != magic_char and password[int(second_index)-1] == magic_char)
     return is_valid
-    
+
 #sample_input = "4-5 t: ttglwxxghtznp"
 # parsed_input = lineparser(sample_input)
 # #print(password_validator(1,12,"t","ttglwxxghtznp"))
@@ -43,6 +45,6 @@ if __name__ == '__main__':
             valid_password_count += 1
         if second_password_validator(*lineparser(line)):
             second_valid_password_count +=1
-    
+
     print(valid_password_count)
     print(second_valid_password_count)
