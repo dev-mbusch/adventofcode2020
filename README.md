@@ -21,8 +21,9 @@ Naming scheme:
 - 2020-12-03: Day 3 Solved (MB & MP)
 - 2020-12-04: Day 4 Solved Part One (MP)
 - 2020-12-05: Day 4 Solved (MB)
+- 2020-12-05: Day 5 Solved (MB)
 
 ## Leaderboard
 
-- MB: 08 Gold Stars
+- MB: 10 Gold Stars
 - MP: 07 Gold Stars
