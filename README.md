@@ -18,9 +18,11 @@ Naming scheme:
 - 2020-11-30: Git Init & First Commit
 - 2020-12-01: Day 1 Solved (MB & MP)
 - 2020-12-02: Day 2 Solved (MB & MP)
-- 2020-12-03: Day 3 Solves (MB & )
+- 2020-12-03: Day 3 Solved (MB & MP)
+- 2020-12-04: Day 4 Solved Part One (MP)
+- 2020-12-05: Day 4 Solved (MB)
 
 ## Leaderboard
 
-- MB: 06 Gold Stars
-- MP: 05 Gold Stars
+- MB: 08 Gold Stars
+- MP: 07 Gold Stars
