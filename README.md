@@ -23,8 +23,9 @@ Naming scheme:
 - 2020-12-05: Day 4 Solved (MB)
 - 2020-12-05: Day 5 Solved (MB)
 - 2020-12-06: Day 6 Solved (MB)
+- 2020-12-06: Day 5 Solved (MP)
 
 ## Leaderboard
 
 - MB: 12 Gold Stars
-<!-- - MP: 07 Gold Stars -->
+- MP: 10 Gold Stars
