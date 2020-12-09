@@ -19,7 +19,7 @@ Naming scheme:
 - 2020-12-01: Day 1 Solved (MB & MP)
 - 2020-12-02: Day 2 Solved (MB & MP)
 - 2020-12-03: Day 3 Solved (MB & MP)
-- 2020-12-04: Day 4 Solved Part One (MP)
+- 2020-12-04: Day 4 Part 1 Solved (MP)
 - 2020-12-05: Day 4 Solved (MB)
 - 2020-12-05: Day 5 Solved (MB)
 - 2020-12-06: Day 6 Solved (MB)
