@@ -27,9 +27,10 @@ Naming scheme:
 - 2020-12-06: Day 6 Solved (MP)
 - 2020-12-07: Day 7 Part 1 Solved (MP)
 - 2020-12-08: Day 8 Part 1 Solved (MB)
-- 2020-12-07: Day 7 Part 2 Solved (MP)
+- 2020-12-09: Day 7 Part 2 Solved (MP)
+- 2020-12-09: Day 9 Solved (MB)
 
 ## Leaderboard
 
-- MB: 13 Gold Stars
+- MB: 15 Gold Stars
 - MP: 14 Gold Stars
