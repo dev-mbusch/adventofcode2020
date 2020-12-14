@@ -6,7 +6,7 @@ from collections import namedtuple
 
 Instructions = namedtuple('Instructions', ['operation', 'argument'])
 
-with open(r'./input_files/day08_input_mb.txt', 'r') as fh:
+with open(r'../input_files/day08_input_mb.txt', 'r') as fh:
     raw_input = [line for line in fh.read().splitlines()]
 
 raw_input = [line.split(' ') for line in raw_input]
@@ -39,6 +39,7 @@ def process(instructions):
 
     return accumulator
 
+print(f'Part One - Result: {process(instructions) = }')
 # Part Two
 # def process2(instructions):
 #     i = 0
